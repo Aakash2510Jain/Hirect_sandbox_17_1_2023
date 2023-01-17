@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" controller="CopyReferralLinkHelper" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="userInfo" type="User"/>
+
+
+    <div>
+        <lightning:button variant="brand" label="Copy to Clipboard" onclick="{!c.copyText}"/>
+    </div>
+</aura:component>

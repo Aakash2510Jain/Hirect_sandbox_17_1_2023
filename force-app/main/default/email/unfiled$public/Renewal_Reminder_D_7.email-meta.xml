@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Renewal Reminder D+7</name>
+    <style>none</style>
+    <subject>Your Hirect Subscription Plan has EXPIRED!</subject>
+    <textOnly>(D+7)
+
+Good Morning {!Account.Name},
+
+We at Hirect hope you are doing well.
+This email is to inform you that your subscription plan for Hirect’s &apos;Basic for 90 days&apos; EXPIRED 1
+WEEK AGO,and since you are no longer able to avail the benefits associated with the
+respective subscription plan, we encourage you to renew your subscription plan and
+continue hiring without any hassle.
+
+To continue your journey on Hirect and hire without hassle, and unlock upto  chats a day
+everyday for , simply get onto the Hirect App/click on the link below to renew your
+plan.
+
+Hurry, you don’t want to miss out on our subscription plans that have made hiring the right
+candidate for a job role inexpensive, at only .
+
+Renew and Hire, with Hirect!
+
+Best Wishes,
+Team Hirect</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,10 @@
+Hi {!Account.Name},<br/><br/>
+
+Your Subscription to post job on Hirect Plaform will expire on {!Opportunity.Renewable_Date__c}, please subscribe to same or higher plan as per your necessity to continue posting jobs for your organization.<br/><br/>
+
+Hire Instantly for Your Startup.<br/>
+<img src="https://hirect4--partial--c.visualforce.com/resource/1652518777000/Logo"/>
+
+<br/><br/>
+ Best Wishes<br/>
+Team Hirect

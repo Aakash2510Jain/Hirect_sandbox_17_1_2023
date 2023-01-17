@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Co-Operative Bank</fullName>
+        <default>false</default>
+        <label>Co-Operative Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Co-Operative Society</fullName>
+        <default>false</default>
+        <label>Co-Operative Society</label>
+    </customValue>
+    <customValue>
+        <fullName>Limited Liability Partner</fullName>
+        <default>false</default>
+        <label>Limited Liability Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Partnership</fullName>
+        <default>false</default>
+        <label>Partnership</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Limited</fullName>
+        <default>false</default>
+        <label>Private Limited</label>
+    </customValue>
+    <customValue>
+        <fullName>Proprietorship</fullName>
+        <default>false</default>
+        <label>Proprietorship</label>
+    </customValue>
+    <customValue>
+        <fullName>Franchise</fullName>
+        <default>false</default>
+        <label>Franchise</label>
+    </customValue>
+    <description>Type of Firm</description>
+    <masterLabel>FirmType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

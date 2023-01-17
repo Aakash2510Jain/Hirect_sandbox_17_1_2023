@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Payment Received</name>
+    <style>none</style>
+    <subject>Payment Has Been Received</subject>
+    <textOnly>Congratulations {!Lead.FirstName} {!Lead.LastName}
+
+We are happy to inform you that your payment for Hirect’s {!Lead.Product__c} has been successfully received.
+
+The {!Lead.Product__c}-{!Lead.Amount__c} will be active for days. 
+
+ Please note that your chosen Hirect Subscription Plan will be activated automatically in 2 hours.  You can then hop on board and unlock benefits that will help you find the most talented and relevant candidates from a pool of over 3M+ registered and verified job seekers.
+
+Hirect is excited to have you on board and to help you with your hiring needs.
+
+Happy Hiring!
+
+Best Wishes,
+Team Hirect</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

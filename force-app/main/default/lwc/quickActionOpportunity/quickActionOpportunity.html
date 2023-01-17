@@ -1,0 +1,12 @@
+<template>
+<lightning-card>
+<lightning-quick-action-panel header="New Opportunity Record">
+<lightning-card class="slds-m-around_medium">
+<lightning-input class="slds-m-around_medium" label="Name" name="name" required="true" value={fieldList.Name} onchange={hanldeChange}></lightning-input>
+<lightning-input class="slds-m-around_medium" label="CloseDate" type="date" required="true" name="date" value={fieldList.CloseDate} onchange={hanldeChange}></lightning-input>
+<lightning-combobox class="slds-m-around_medium" name="Stage" label="StageName" placeholder="Choose Stage" value={fieldList.StageName} onchange= {hanldeChange} options={statusOptions}> </lightning-combobox>
+<lightning-button class="slds-m-around_medium" label="Save" onclick={handleSave} icon-position="right" variant="brand"></lightning-button>
+</lightning-card>
+</lightning-quick-action-panel>
+</lightning-card>
+</template>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Renewal Email</name>
+    <style>none</style>
+    <subject>Warm Greetings from Hirect</subject>
+    <textOnly>Hi {!Account.Name},
+
+Your Subscription to post job on Hirect Plaform will expire on {!Opportunity.00N0w000007sy6H}, please subscribe to same or higher plan as per your necessity to continue posting jobs for your organizaation.
+
+Hire Instantly for Your Startup.
+
+
+Best Wishes
+{!User.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

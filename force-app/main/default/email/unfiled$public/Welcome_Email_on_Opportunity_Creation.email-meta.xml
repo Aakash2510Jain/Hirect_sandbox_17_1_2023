@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Welcome Email on Opportunity Creation</name>
+    <style>none</style>
+    <subject>Welcome To Hirect</subject>
+    <textOnly>Hi {!Opportunity.Name},
+
+Welcome to Hirect
+
+Hirect is a chat-based mobile-first direct hiring platform designed specifically for high-growth start-ups and SMEs. It connects startup job aspirants with startup leaders without any middleman and vice versa. It helps one to hire talents anytime, anywhere. Over 120K+ verified startups &amp; 2.3 million+ verified job seekers are registered on Hirect.
+
+For any assistance, you can connect With our Executive
+
+Hire Instantly for Your Startup.
+
+Best Wishes
+{!User.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

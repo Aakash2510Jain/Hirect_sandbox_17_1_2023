@@ -1,0 +1,50 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:appHostable,flexipage:availableForRecordHome" 
+access="global" controller="UserLeavesStats">
+
+    <aura:attribute name="Startdate" type="date" />
+    <aura:attribute name="Enddate" type="date" />
+    <aura:handler name="init" value="{!this}" action="{!c.onload}" />
+    <aura:attribute name="DisableDLeaveDate" type="boolean" default="false"/>
+    <aura:attribute name="disableButton" type="boolean" default="false"/>
+
+
+    <div class="slds-grid slds-gutters slds-modal__header" style="background-color:#004d99;;padding:.5%;width: 99.9%;margin-left: .1%;font-size:20px;">
+        <div class="slds-col slds-size_1-of-6">
+            <span>
+                
+            </span>
+        </div>
+        <div class="slds-col slds-size_4-of-6">
+            <span>
+                <h6 class="slds-align_absolute-center" style="color: white;font-size:30px;">
+                    Leave Application
+                </h6>
+            </span>
+        </div>
+        <div class="slds-col slds-size_1-of-6">
+            <span>
+                
+            </span>
+        </div>
+    </div>
+    <div class="slds-modal__content slds-p-around--x-small slds-align_absolute-center slds-size_1-of-1 slds-is-relative">
+        <form class="slds-form_stacked">
+            <lightning:input type="date" aura:id="eventform" label="Start Date"
+                         name="startdatetime"                                         
+                         value="{!v.Startdate}"  onchange= "{!c.handleStartChange}"
+                         required="true" disabled="{!v.DisableDLeaveDate}"/>
+        <lightning:input type="date" aura:id="eventform" label="End Date and Time"
+                         name="enddatetime"                                         
+                         value="{!v.Enddate}" onchange= "{!c.handleEndChange}"
+                         required="true" disabled="{!v.DisableDLeaveDate}"/>
+
+
+        </form>
+    </div>
+    <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+        <lightning:button type="submit" onclick="{!c.ApplyForLeave}" disabled="{!v.disableButton}" class="slds-button slds-button_brand">Submit Leave Application</lightning:button>
+           
+    </div>
+
+
+</aura:component>

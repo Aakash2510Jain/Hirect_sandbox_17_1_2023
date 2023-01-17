@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KAM_RM_Assignment_Group__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>KAM/RM Assignment Group</label>
+    <referenceTo>KAM_RM_Assignment_Group__c</referenceTo>
+    <relationshipLabel>KAM/RM Assignment Group Members</relationshipLabel>
+    <relationshipName>KAM_RM_Assignment_Group_Members</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Renewal_Reminder_Before_3_days_Expiry</fullName>
+        <description>Renewal Reminder - Before 3 days Expiry</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Renewal_Reminder_D3</template>
+    </alerts>
+    <alerts>
+        <fullName>Renewal_Reminder_Before_7_days_Expiry</fullName>
+        <description>Renewal Reminder - Before 7 days Expiry</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Renewal_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Renewal_Reminder_Expired_3_days_Ago</fullName>
+        <description>Renewal Reminder - Expired 3 days Ago</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Renewal_Reminder_D_3</template>
+    </alerts>
+    <alerts>
+        <fullName>Renewal_Reminder_Expired_Week_Ago</fullName>
+        <description>Renewal Reminder - Expired Week Ago</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Renewal_Reminder_D_7</template>
+    </alerts>
+    <alerts>
+        <fullName>Renewal_Reminder_Expired_yesterday</fullName>
+        <description>Renewal Reminder -  Expired yesterday</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Renewal_Reminder_D_1</template>
+    </alerts>
+    <alerts>
+        <fullName>Renewal_Reminder_Expiring_Today</fullName>
+        <description>Renewal Reminder -  Expiring Today</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Renewal_Reminder_D3T</template>
+    </alerts>
+</Workflow>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Inactive Account Email</name>
+    <style>none</style>
+    <subject>Warm Greetings from Hirect</subject>
+    <textOnly>Hi {!Account.Name},
+
+Your Subscription has been expired and account is marked as Inactive due to continuous inactivity for more than 7 days. Please subscribe to any of the plans to start using the services
+
+Hire Instantly for Your Startup.
+
+
+Best Wishes
+{!User.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

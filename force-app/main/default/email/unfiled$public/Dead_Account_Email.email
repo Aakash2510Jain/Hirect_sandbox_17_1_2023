@@ -1,0 +1,10 @@
+Hi {!Account.Name},<br/><br/>
+
+Your Subscription has been expired and account is marked as dead due to continuous inactivity. Please subscribe to any of the plans to start using the services<br/><br/>
+
+Hire Instantly for Your Startup.<br/>
+<img src="https://hirect4--partial--c.visualforce.com/resource/1652518777000/Logo"/>
+
+<br/><br/>
+ Best Wishes<br/>
+ {!User.Name}

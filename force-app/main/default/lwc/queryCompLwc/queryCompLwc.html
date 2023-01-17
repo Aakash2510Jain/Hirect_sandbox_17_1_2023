@@ -1,0 +1,195 @@
+<template>
+    <lightning-card>
+        <lightning-card title="Bulk Update">
+        </lightning-card>
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap" >
+            <div class="slds-size_1-of-6">
+                <lightning-combobox name="progress"
+                    label="Object"
+                    value={value}
+                    placeholder="-Select Object-"
+                    options={objectList}
+                    onchange={objecthandleChange} >
+                </lightning-combobox>
+            </div>
+            <template if:true={selectedObject}>
+                <div class="slds-size_2-of-6">
+                    <lightning-dual-listbox
+                            name="Field"
+                            label="Select Field"
+                            source-label="Available"
+                            selected-label="Selected"
+                            field-level-help="Select Feild To Show"
+                            options={feildData}
+                            onchange={DualListBoxhandleChange}>
+                 </lightning-dual-listbox>
+                 </div>
+            </template>
+        </div>
+    
+        <lightning-card>
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap" >
+                <template if:true={selectedObject}>
+                 <template for:each={rows} for:item="row"> 
+                     <div key={row.index} style="width:100%;">
+                         <div class="slds-size_1-of-1 slds-align_absolute-center" style="display: inline-flex; width:100% ">
+                             <div class="slds-size_1-of-5 slds-p-around_small">
+                                 <lightning-combobox
+                                     data-id={row.index}
+                                     name='multiSlectedFeildDual'
+                                     label="Feild"
+                                     value={fieldSelected}
+                                     placeholder="-Select Field-"
+                                     options={feildData}
+                                     onchange={handlerChange} >
+                             </lightning-combobox>
+                            
+                             <!-- <template if:true={selectedfeild} for:each={selectedfeild}  for:item="slktfld">
+                                <lightning-pill key={slktfld.id} label={slktfld.key} onremove={pillHandleRemove}>
+                                </lightning-pill>
+                             </template> -->
+                             </div>
+                             <div class="slds-size_1-of-5 slds-p-around_small">
+                                 <lightning-combobox
+                                     data-id={row.index}
+                                     name='selectedOprator'
+                                     label="Operator"
+                                     value={selectedOprator}
+                                     placeholder="-Select Operator-"
+                                     options={row.operators}
+                                     onchange={handleOperaote} >
+                                 </lightning-combobox> 
+                             </div>
+                             <div class="slds-size_1-of-5 slds-p-around_small">
+                                 <template if:true={row.showInput}>
+                                     <lightning-input label="Enter value"  data-id={row.index} value={secondinputValue} onchange={handlInputValue} type={row.selectFeildType} name="textInput"></lightning-input>
+                                 </template>
+                             </div>
+                             <!-- this is div modal for massUpdate -->
+                             <div>
+                                 <template if:true={massUpdate}>
+                                     <template if:true={isShowModal}>
+                                         <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                                             <div class="slds-modal__container">
+                                                 <div class="slds-modal__header">
+                                                     <h1 class="slds-modal__title slds-hyphenate">Selected record will be updated</h1>
+                                                   </div>
+                                                   <div class=" slds-modal__content slds-p-around_medium">
+                                                     <lightning-combobox
+                                                         data-id={row.index}
+                                                         name='selectedField'
+                                                         label="Feild"
+                                                         value={fieldSelected}
+                                                         placeholder="-Select Field-"
+                                                         options={feildData}
+                                                         onchange={handlerChangeModal} >
+                                                     </lightning-combobox>
+                                                     <template if:true={row.showInput}>
+                                                         <lightning-input label="Enter value"  value={inPutValueModal} onchange={handleInputValuemodal} type={modalinputTpe} name="textInput"></lightning-input>
+                                                     </template>
+                                                     <!-- data-id={row.index}  -->
+                                                   </div>
+                                                   <div class="slds-modal__footer slds-modal__footer_directional">
+                                                     <button class="slds-button slds-button_neutral" onclick={handleCancel}>Cancel</button>
+                                                     <button class="slds-button slds-button_brand" onclick={processDataInBulk}>Update All</button>
+                                                  </div>
+                                             </div>
+                                         </section>
+                                         <div class="slds-backdrop slds-backdrop_open"></div>
+                                     </template>
+                                 </template>
+                             </div>
+                             <div class="slds-size_1-of-4 slds-p-around_small">
+                                 <div class="slds-p-top_large">
+                                     <lightning-button-group class="slds-p-bottom_x-small">
+                                         <lightning-button label="Add Row" onclick={handBtnAction}  data-id={row.index} name='plus'></lightning-button>
+                                         <lightning-button label="Delete" variant="destructive" onclick={handBtnAction} icon-name="utility:delete" name='minus'  data-id={row.index}></lightning-button>
+                                     </lightning-button-group>
+                                 </div>
+                             </div>
+                         </div>      
+                     </div>
+                 </template>
+                 <div  class="slds-align_absolute-center">
+                     <div class="slds-p-around_large lgc-bg">
+                         <lightning-button   variant="brand"  onclick={queyBtn} title="Search" name="Search" label="Search"></lightning-button>
+                     </div>
+                     <div class="slds-p-around_large lgc-bg">
+                        <lightning-button  variant="brand"  onclick={massUpdateBTN} title="Mass Update" name="Bulk Update" label="Bulk Update"></lightning-button>
+                    </div>
+                 </div>
+                 <!-- <div  class="slds-align_left">
+                    
+                 </div> -->
+                </template>
+             </div>
+            
+    
+        </lightning-card>
+       
+    
+        <lightning-card>
+            <div class="slds-p-around_medium">
+                <div> <template if:true={isLoading}>
+                        <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                        </lightning-spinner>
+                     </template>
+               <div>
+                    <lightning-combobox
+                        name="progress"
+                        label="Records/Page"
+                        value={defaultValue}
+                        placeholder="--Records/Page--"
+                        options={numberOfpage}
+                        onchange={numberOfpageHandler} >
+                    </lightning-combobox>
+                </div>
+                    <lightning-layout multiple-rows="true" vertical-align="end">
+                        <lightning-layout-item size="12" padding="around-small">
+                            <div if:true={DataTableResponseWrappper}>
+                                <div class="slds-text-heading_small">{DataTableResponseWrappper.TableTitle}</div>
+                                <lightning-datatable
+                                     data={data} 
+                                     data-id="table" 
+                                     columns={DataTableResponseWrappper.lstDataTableColumns} 
+                                     key-field="Id"
+                                     onrowselection ={onRowSelection} 
+                                     onsave={handleSave}
+                                     draft-values={draftValues}
+                                     selected-rows={allSelectedRows}>
+                                </lightning-datatable>
+                            </div>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div>
+                <lightning-layout horizontal-align="space">
+                    <lightning-layout-item flexibility="auto">
+                        <lightning-button 
+                            label="Previous" 
+                            icon-name="utility:chevronleft" 
+                            onclick={previousHandler}>
+                        </lightning-button>
+                    </lightning-layout-item>
+                    <lightning-layout-item flexibility="auto">
+                        Page {page} of {totalPage}
+                    </lightning-layout-item>
+                    <lightning-layout-item flexibility="auto">
+                        <lightning-button 
+                            label="Next" 
+                            icon-name="utility:chevronright" 
+                            icon-position="right"
+                            onclick={nextHandler}>
+                        </lightning-button>
+                    </lightning-layout-item>
+                </lightning-layout>
+    
+    
+            </div>
+            <div class="slds-p-horizontal_small"></div>
+           
+        </lightning-card>
+
+    </lightning-card>
+  
+
+</template>

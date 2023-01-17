@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="CreateRenewalOpportunityHelper">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="recordId" type="string" default=""/> 
+    <aura:attribute name="selectedValue" type="String" />
+    <aura:attribute name="stageList" type="List" />
+    <aura:attribute name="closeDate" type="Date" default="" />
+    
+    <lightning:card footer="" title="">
+    <lightning:input type="date" name="" label="Select Close Date" value="{!v.closeDate}" required="true" ></lightning:input>
+        <br/>
+    <lightning:select name="stage" label="Select Opportunity Stage:" aura:id="stageId" value="{!v.selectedValue}" required="true" >
+        <option value="">choose one...</option>
+        <aura:iteration items="{!v.stageList}" var="stage">
+            <option text="{!stage}" value="{!stage}" selected="{!selectedValue}"/>
+        </aura:iteration>
+    </lightning:select>
+        <br/>
+        
+<br/>
+    <lightning:button variant="brand" class="slds-align_absolute-center" label="Save" title="" onclick="{! c.insertOpp }" />
+    </lightning:card>
+</aura:component>

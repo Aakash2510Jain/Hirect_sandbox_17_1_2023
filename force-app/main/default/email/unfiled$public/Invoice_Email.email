@@ -1,0 +1,12 @@
+Hi {!Account.Name},<br/><br/>
+
+Your Subscription has been activated.<br/><br/>
+
+Please find attached copy of invoice of the plan subscribed to and feel free in case any queries are there.
+
+Hire Instantly for Your Startup.<br/>
+<img src="https://hirect4--partial--c.visualforce.com/resource/1652518777000/Logo"/>
+
+<br/><br/>
+ Best Wishes<br/>
+ {!User.Name}

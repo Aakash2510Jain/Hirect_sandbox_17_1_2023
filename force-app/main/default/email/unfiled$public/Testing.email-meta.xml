@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Testing</name>
+    <style>none</style>
+    <subject>Test subject</subject>
+    <textOnly>Dear $contacts-firstname$,
+
+We are happy to inform you that your Recruiter Profile has been Verified.
+Your Job Posting is LIVE &amp; accepting Applications on Hirect.
+
+For a seamless hiring experience, you can review candidates, bookmark them and chat with them directly on Hirect.
+
+For support, connect with our WhatsApp Chat Support Team  or email us at support@hirect.in
+
+
+Thank you for registering with Hirect!
+Sincerely,
+Hirect
+
+
+
+You are receiving this email because you signed up on our application
+If you want to unsubscribe, click here .</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

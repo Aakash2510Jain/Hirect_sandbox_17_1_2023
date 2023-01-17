@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Renewal Reminder- Exclusive Jobs</name>
+    <style>none</style>
+    <subject>Your subscription to Hirect is about to expire!</subject>
+    <textOnly>Good Morning {!Opportunity.Account},
+
+Our team at Hirect wishes you well.
+This email is to inform you that your subscription plan for Hirect&apos;s  is going to
+EXPIRE IN 7 DAYS, post which you will not be eligible to avail of the benefits associated with
+the respective subscription plan.
+
+The plan you have currently subscribed to unlocks  exclusive jobs for .
+Remember that after 7 DAYS, you will no longer be eligible for the same.
+
+To renew your chosen plan, simply get onto the Hirect App/click on the link below.
+
+Hurry, you don&apos;t want to miss out on our subscription plans that have made hiring the right
+candidate for a job role inexpensive, at only . 
+
+Renew and Hire with Hirect!
+
+Best Wishes,
+Team Hirect</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Franchisee</fullName>
+        <default>true</default>
+        <label>Franchisee</label>
+    </customValue>
+    <customValue>
+        <fullName>Whitemart</fullName>
+        <default>false</default>
+        <label>Whitemart</label>
+    </customValue>
+    <description>Delivery Option</description>
+    <masterLabel>Delivery Option</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

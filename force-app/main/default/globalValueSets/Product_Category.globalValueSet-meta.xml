@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Air Conditioner</fullName>
+        <default>false</default>
+        <label>Air Conditioner</label>
+    </customValue>
+    <customValue>
+        <fullName>Air Cooler</fullName>
+        <default>false</default>
+        <label>Air Cooler</label>
+    </customValue>
+    <customValue>
+        <fullName>Battery</fullName>
+        <default>false</default>
+        <label>Battery</label>
+    </customValue>
+    <customValue>
+        <fullName>Chimney</fullName>
+        <default>false</default>
+        <label>Chimney</label>
+    </customValue>
+    <customValue>
+        <fullName>Cooker</fullName>
+        <default>false</default>
+        <label>Cooker</label>
+    </customValue>
+    <customValue>
+        <fullName>Dish Washer</fullName>
+        <default>false</default>
+        <label>Dish Washer</label>
+    </customValue>
+    <customValue>
+        <fullName>Drier</fullName>
+        <default>false</default>
+        <label>Drier</label>
+    </customValue>
+    <customValue>
+        <fullName>DVD</fullName>
+        <default>false</default>
+        <label>DVD</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric Access18%</fullName>
+        <default>false</default>
+        <label>Electric Access18%</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric Cooker</fullName>
+        <default>false</default>
+        <label>Electric Cooker</label>
+    </customValue>
+    <customValue>
+        <fullName>Electric Iron</fullName>
+        <default>false</default>
+        <label>Electric Iron</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency Lamp</fullName>
+        <default>false</default>
+        <label>Emergency Lamp</label>
+    </customValue>
+    <customValue>
+        <fullName>Fan</fullName>
+        <default>false</default>
+        <label>Fan</label>
+    </customValue>
+    <customValue>
+        <fullName>Freezer</fullName>
+        <default>false</default>
+        <label>Freezer</label>
+    </customValue>
+    <customValue>
+        <fullName>Grinder</fullName>
+        <default>false</default>
+        <label>Grinder</label>
+    </customValue>
+    <customValue>
+        <fullName>HOB</fullName>
+        <default>false</default>
+        <label>HOB</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Care</fullName>
+        <default>false</default>
+        <label>Home Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Theatre</fullName>
+        <default>false</default>
+        <label>Home Theatre</label>
+    </customValue>
+    <customValue>
+        <fullName>Induction Cooker</fullName>
+        <default>false</default>
+        <label>Induction Cooker</label>
+    </customValue>
+    <customValue>
+        <fullName>Invertor</fullName>
+        <default>false</default>
+        <label>Invertor</label>
+    </customValue>
+    <customValue>
+        <fullName>Juicer</fullName>
+        <default>false</default>
+        <label>Juicer</label>
+    </customValue>
+    <customValue>
+        <fullName>Kettle</fullName>
+        <default>false</default>
+        <label>Kettle</label>
+    </customValue>
+    <customValue>
+        <fullName>Lantern LED</fullName>
+        <default>false</default>
+        <label>Lantern LED</label>
+    </customValue>
+    <customValue>
+        <fullName>Laptop</fullName>
+        <default>false</default>
+        <label>Laptop</label>
+    </customValue>
+    <customValue>
+        <fullName>LED TV</fullName>
+        <default>false</default>
+        <label>LED TV</label>
+    </customValue>
+    <customValue>
+        <fullName>LED TV BEL 33 INCH</fullName>
+        <default>false</default>
+        <label>LED TV BEL 33 INCH</label>
+    </customValue>
+    <customValue>
+        <fullName>LPG Stove</fullName>
+        <default>false</default>
+        <label>LPG Stove</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Equp 12</fullName>
+        <default>false</default>
+        <label>Medical Equp 12</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Equp 18</fullName>
+        <default>false</default>
+        <label>Medical Equp 18</label>
+    </customValue>
+    <customValue>
+        <fullName>Microwave Oven</fullName>
+        <default>false</default>
+        <label>Microwave Oven</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixi</fullName>
+        <default>false</default>
+        <label>Mixi</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile Phone</fullName>
+        <default>false</default>
+        <label>Mobile Phone</label>
+    </customValue>
+    <customValue>
+        <fullName>Multimedia Speakers</fullName>
+        <default>false</default>
+        <label>Multimedia Speakers</label>
+    </customValue>
+    <customValue>
+        <fullName>Printer</fullName>
+        <default>false</default>
+        <label>Printer</label>
+    </customValue>
+    <customValue>
+        <fullName>Refrigerator-DC</fullName>
+        <default>false</default>
+        <label>Refrigerator-DC</label>
+    </customValue>
+    <customValue>
+        <fullName>Refrigerator-FF</fullName>
+        <default>false</default>
+        <label>Refrigerator-FF</label>
+    </customValue>
+    <customValue>
+        <fullName>Sewing Machine</fullName>
+        <default>false</default>
+        <label>Sewing Machine</label>
+    </customValue>
+    <customValue>
+        <fullName>Soda Maker</fullName>
+        <default>false</default>
+        <label>Soda Maker</label>
+    </customValue>
+    <customValue>
+        <fullName>Stabilizer</fullName>
+        <default>false</default>
+        <label>Stabilizer</label>
+    </customValue>
+    <customValue>
+        <fullName>Toaster</fullName>
+        <default>false</default>
+        <label>Toaster</label>
+    </customValue>
+    <customValue>
+        <fullName>Utensils</fullName>
+        <default>false</default>
+        <label>Utensils</label>
+    </customValue>
+    <customValue>
+        <fullName>Vaccum Cleaner</fullName>
+        <default>false</default>
+        <label>Vaccum Cleaner</label>
+    </customValue>
+    <customValue>
+        <fullName>Washing Machine-FA</fullName>
+        <default>false</default>
+        <label>Washing Machine-FA</label>
+    </customValue>
+    <customValue>
+        <fullName>Washing Machine-SA</fullName>
+        <default>false</default>
+        <label>Washing Machine-SA</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Cooler</fullName>
+        <default>false</default>
+        <label>Water Cooler</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Heater</fullName>
+        <default>false</default>
+        <label>Water Heater</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Purifier</fullName>
+        <default>false</default>
+        <label>Water Purifier</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <description>Product Category</description>
+    <masterLabel>Product Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

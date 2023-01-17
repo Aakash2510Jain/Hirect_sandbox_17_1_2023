@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Razor Pay Success Status</name>
+    <style>none</style>
+    <subject>Warm Greetings from Hirect</subject>
+    <textOnly>Hi {!Account.Name},
+
+Your Subscription has been activated and Payment of {!Opportunity.Amount} has been received, you can start posting Jobs.
+
+Hire Instantly for Your Startup.
+
+
+Best Wishes
+{!User.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

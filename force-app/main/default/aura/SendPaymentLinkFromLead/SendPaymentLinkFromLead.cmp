@@ -1,0 +1,160 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" controller = "SendPaymentLinkHandler">
+    
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 80rem !important;
+        width:80% !important;
+        }
+    </aura:html>
+    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="recordId" type="String" default=""/>
+    <aura:attribute name="showAllproductList" type="boolean" default="True" />
+    <aura:attribute name="showSelectedproductList" type="boolean" default="false" /> 
+    <aura:attribute name="ProductList" type="List" default=""/>
+    <aura:attribute name="LeadRec" type="Object" default=""/>
+    <aura:attribute name="LeadRecord" type="Object" default=""/>
+    <aura:attribute name="DiscountOptions" type="List" default=""/>
+    
+    
+    
+    <aura:if isTrue="{!v.showAllproductList}">
+        <div class="slds-align_absolute-center" style="font-size:30px;">
+            <h1>Select a Product</h1>
+        </div>
+        <div>
+            <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-box" role="grid">
+                <thead>
+                    <tr class="slds-text-title--caps">
+                        <th>
+                            <div class="slds-truncate" title="Select a Product">Select a Product</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Product Name">Product Name</div>
+                        </th>
+                        
+                        <th scope="col">
+                            <div class="slds-truncate" title="Price">Price</div>
+                        </th>
+                        
+                        <th scope="col">
+                            <div class="slds-truncate" title="Product Code">Product Code</div>
+                        </th>
+                        
+                        <th scope="col">
+                            <div class="slds-truncate" title="Family">Family</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.ProductList}" var="ProItem">
+                        <tr>
+                            <th>
+                                <label class="slds-checkbox">
+                                    <ui:inputCheckbox aura:id="checkProduct" value="" text="{!ProItem.Id}" />
+                                    <span class="slds-checkbox--faux" />
+                                    <span class="slds-form-element__label"></span>
+                                </label>
+                            </th>
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!ProItem.Name}">{!ProItem.Name}</div>
+                            </th>
+                            <th scope="row">
+                                <div class="slds-truncate" title="{!ProItem.UnitPrice}">{!ProItem.UnitPrice}</div>
+                            </th>
+                            <td>
+                                <div class="slds-truncate" title="{!ProItem.ProductCode}">{!ProItem.ProductCode}</div>
+                            </td>
+                            <td>
+                                <div class="slds-truncate" title="{!ProItem.Product2.Family}">{!ProItem.Product2.Family}</div>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="slds-text-align_center slds-m-top_large">
+            <lightning:button variant="brand" class="" type="submit" onclick="{!c.handleSelectedProducts}" name="save"
+                              label="Next" />
+            <!-- lightning:button type="submit" onclick="{!c.close}" name="close" label="Cancel" / -->
+        </div>
+        
+    </aura:if>
+    
+    <aura:if isTrue="{!v.showSelectedproductList}">
+        <div class="slds-align_absolute-center" style="font-size:30px;">
+            <h1>Provide Quantity and Discount(if any)</h1>
+        </div>
+        
+        <div>
+            <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-box" role="grid">
+                <thead>
+                    <tr class="slds-text-title--caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="Product Name">Product Name</div>
+                        </th>
+                        
+                        <th scope="col">
+                            <div class="slds-truncate" title="Enter Quantity">Enter Quantity</div>
+                        </th>
+                        
+                        <th scope="col">
+                            <div class="slds-truncate" title="Product Code">Product Price</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="Discount in Percentage/Amount">Select Discount Type</div>
+                        </th>
+                        
+                        <th scope="col">
+                            <div class="slds-truncate" title="Discount">Enter Discount</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <th scope="row">
+                            <div class="slds-truncate" title="{!v.LeadRec.Name}">{!v.LeadRec.Name}</div>
+                        </th>
+                        <th scope="row">
+                            <lightning:input class="slds-truncate slds-p-bottom_large" type="number" name="Enter Quantity" value="{!v.LeadRec.Quantity__c }" placeholder="Enter product Quantity..." label="" />
+                            <!-- div class="slds-truncate" title="{!ProList.UnitPrice}">{!ProList.UnitPrice}</div -->
+                        </th>
+                        <td>
+                            <div class="slds-truncate slds-align_absolute-center" title="{!v.LeadRec.UnitPrice}">{!v.LeadRec.UnitPrice}</div>
+                        </td>
+                        <lightning:select class="slds-truncate slds-p-bottom_large slds-p-top_x-small" name="colorId" label="" aura:id="colorId" value="{!v.LeadRec.SelectedDiscountOption}">
+                            <aura:iteration items="{!v.DiscountOptions}" var="option">
+                                <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"/>
+                            </aura:iteration>
+                        </lightning:select>
+                        <td>
+                            <aura:if isTrue="{!v.LeadRec.SelectedDiscountOption == 'Amount'}">
+                                <lightning:input class="slds-truncate slds-p-bottom_large" type="number" name="Enter Discount" value="{!v.LeadRec.Discount__c }" placeholder="Enter Discount..." label="" max="{!v.LeadRec.UnitPrice }"/>
+                            </aura:if>
+                            <aura:if isTrue="{!v.LeadRec.SelectedDiscountOption == 'Percentage'}">
+                                <lightning:input class="slds-truncate slds-p-bottom_large" type="number" name="Enter Discount" value="{!v.LeadRec.Discount__c }" placeholder="Enter Discount..." label="" max="100"/>
+                            </aura:if>
+                            
+                            <!-- div class="slds-truncate" title="{!ProList.ProductCode}">{!ProList.Product2.Family}</div -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        
+        <div class="slds-text-align_center slds-m-top_large">
+            <lightning:button variant="brand" class="" type="submit" onclick="{!c.updateToLead}" name="save"
+                              label="Save" />
+            <lightning:spinner aura:id="mySpinner" alternativeText="Processing.." title="Processing.." variant="brand" size="large" class="slds-hide"/>
+            <!-- lightning:button type="submit" onclick="{!c.close}" name="close" label="Cancel" / -->
+        </div>
+        
+    </aura:if>
+    
+</aura:component>

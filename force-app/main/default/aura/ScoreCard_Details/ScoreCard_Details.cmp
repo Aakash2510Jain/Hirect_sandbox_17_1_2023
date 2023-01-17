@@ -1,0 +1,61 @@
+<!--c:ScoreCard_Details -->
+<aura:component controller="ScorecardController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="recordId" type="String" />
+    <aura:attribute name="relatedObj" type="String" />
+    <aura:attribute name="isModelOpen" type="Boolean"/>
+    <aura:attribute name="scoreCardDetail" type="Object"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:card title="Scorecard Detail" iconName="standard:contact">
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Scorecard Name">Scorecard Name</div>
+                    </th>
+                    <!--th class="" scope="col">
+                        <div class="slds-truncate" title="Object Type">Object Type</div>
+                    </th-->
+                    <!--th class="" scope="col">
+                        <div class="slds-truncate" title="Roll-Up Summary Field">Roll-Up Summary Field</div>
+                    </th-->
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Total Weight">Total Weight</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Enabled">Enabled</div>
+                    </th>
+                    <!--th class="" scope="col">
+                        <div class="slds-truncate" title="Evaluation Expression For Execution">Evaluation Expression For Execution</div>
+                    </th-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent" id="{!index}">
+                    <td  data-label="Name">
+                        <div class="slds-truncate" title="Scorecard Name">
+                            <lightning:input aura:id="valueVal" type="text"  value="{!v.scoreCardDetail.name}" placeholder="Enter Scorecard Name"/>
+                        </div>
+                    </td>
+                   
+                    <td  data-label="Total Weight">
+                        <div class="slds-truncate" title="Total Weight">
+                            <lightning:input aura:id="valueVal" type="text"  value="{!v.scoreCardDetail.totalWeight}" placeholder="Enter Total Weight"/>
+                        </div>
+                    </td>
+                    <td  data-label="Total Weight">
+                        <div class="slds-truncate" title="Enabled">
+                            <ui:inputCheckbox value="{!v.scoreCardDetail.enabled}"></ui:inputCheckbox>
+                         </div>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        
+    </lightning:card>
+    <aura:method name="saveScoreDetails" action="{!c.saveScoreCard}" access="public">
+        <aura:attribute name="callback" type="Function" />
+    </aura:method>
+</aura:component>

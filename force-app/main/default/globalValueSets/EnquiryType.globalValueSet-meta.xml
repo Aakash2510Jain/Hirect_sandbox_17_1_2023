@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Customer</fullName>
+        <default>true</default>
+        <label>Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </customValue>
+    <customValue>
+        <fullName>New Franchisee</fullName>
+        <default>false</default>
+        <label>New Franchisee</label>
+    </customValue>
+    <description>EnquiryType</description>
+    <masterLabel>EnquiryType</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

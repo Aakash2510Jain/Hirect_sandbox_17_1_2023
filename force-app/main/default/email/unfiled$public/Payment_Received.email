@@ -1,0 +1,12 @@
+Congratulations <b>{!Invoice__c.Lead_name__c}</b><br></br>
+
+We are happy to inform you that your payment for Hirect’s <b>{!Invoice__c.Subscription_plan__c}</b> has been successfully received.<br></br>
+
+The <b>{!Invoice__c.Subscription_plan__c}-{!Invoice__c.Subscription_Plan_Price__c} </b>will be active for days.<br></br>
+Please note that your chosen Hirect Subscription Plan will be activated automatically in 2 hours.  You can then hop on board and unlock benefits that will help you find the most talented and relevant candidates from a pool of over 3M+ registered and verified job seekers.<br></br>
+
+Hirect is excited to have you on board and to help you with your hiring needs.<br></br>
+Happy Hiring!<br></br>
+
+Best Wishes,<br>
+<b>Team Hirect</b></br>

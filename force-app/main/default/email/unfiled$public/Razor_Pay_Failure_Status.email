@@ -1,0 +1,10 @@
+Hi {!Account.Name},<br/><br/>
+
+Your Subscription has not been activated yet please try again proceeding for payment as current transaction has been failed.<br/><br/>
+
+Hire Instantly for Your Startup.<br/>
+<img src="https://hirect4--partial--c.visualforce.com/resource/1652518777000/Logo"/>
+
+<br/><br/>
+ Best Wishes<br/>
+ {!User.Name}

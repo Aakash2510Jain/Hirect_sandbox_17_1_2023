@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office">
+ <head>
+ <link rel="stylesheet" id="fontStyle" href="https://hirect-in.od2.vtiger.com//layouts/v9/skins/vtiger/custom_ckeditor_fonts.css" type="text/css">
+ </head>
+ <body>
+ <center class="content-start" style="background-color:rgb(244, 244, 244)"> 
+ <table border="0" cellpadding="0" cellspacing="0" height="" id="templateContainer" style="border-collapse: collapse; font-family: sans-serif; font-size: 14px; width: 604.75px; padding: 0px; border: 0px solid rgb(204, 204, 204); background-color: rgb(244, 244, 244);" width="604.75"> 
+ <tbody class="ui-sortable"> 
+ <tr class="srt-block"> 
+ <td valign="top" class=""> 
+ <div aria-describedby="cke_10712" aria-label="Rich Text Editor, editor23" aria-multiline="true" class="ckedit cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" contenteditable="true" role="textbox" spellcheck="true" style="position: relative;" tabindex="0">
+ <br>&nbsp; &nbsp; 
+ <span tabindex="-1" contenteditable="false" data-cke-widget-wrapper="1" data-cke-filter="off" class="cke_widget_wrapper cke_widget_inline cke_widget_image cke_image_nocaption" data-cke-display-name="image" data-cke-widget-id="0" role="region" aria-label=" image widget">
+ <img alt="" height="41" data-cke-saved-src="https://hirect-in.od2.vtiger.com/test/upload/images/logo-horizontal-1(6).png" src="https://hirect-in.od2.vtiger.com/test/upload/images/logo-horizontal-1(6).png" width="150" data-cke-widget-upcasted="1" data-cke-widget-keep-attr="0" data-widget="image" class="cke_widget_element" data-cke-widget-data="{%22hasCaption%22%3Afalse%2C%22src%22%3A%22https%3A%2F%2Fhirect-in.od2.vtiger.com%2Ftest%2Fupload%2Fimages%2Flogo-horizontal-1(6).png%22%2C%22alt%22%3A%22%22%2C%22width%22%3A%22150%22%2C%22height%22%3A%2241%22%2C%22lock%22%3Atrue%2C%22align%22%3A%22none%22%2C%22classes%22%3Anull}">
+ <span class="cke_reset cke_widget_drag_handler_container" style="background:rgba(220,220,220,0.5);background-image:url(https://hirect-in.od2.vtiger.com/_resources9.22.6.1_/layouts/v9/assets/include/library/ckeditor/ckeditor4-full/plugins/widget/images/handle.png);display:none;">
+ <img class="cke_reset cke_widget_drag_handler" data-cke-widget-drag-handler="1" src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true">
+ </span>
+ <span class="cke_image_resizer" title="Click and drag to resize">
+ </span>
+ </span>
+ <br>
+ <br>
+ </div> 
+ </td> 
+ </tr> 
+ <tr class="srt-block active"> 
+ <td valign="top" class=""> 
+ <div aria-describedby="cke_10774" aria-label="Rich Text Editor, editor24" aria-multiline="true" class="ckedit cke_editable cke_editable_inline cke_contents_ltr cke_focus cke_show_borders" contenteditable="true" role="textbox" spellcheck="true" style="position: relative;" tabindex="0">
+ <table border="0" class="block-table cke_show_border" height="" style="border-spacing: 0px; border-collapse: collapse; width: 604.75px; background-color: rgb(255, 255, 255); border-style: dotted; border-color: rgb(211, 211, 211); border-width: 0px;" width="604.75">
+ <tbody>
+ <tr>
+ <td class="block-cell" style="padding: 0px;" valign="middle" width="100%">
+ <table border="0" cellpadding="0" cellspacing="0" style="font-size:12px;" width="100%" class=" cke_show_border">
+ <tbody>
+ <tr>
+ <td class="block-content" style="padding: 20px;" valign="top">
+ <span style="font-family:Arial,Helvetica,sans-serif;">
+ <span style="font-size:14px;">
+ <strong>Dear $contacts-firstname$, 
+ </strong>
+ <br>
+ <br>We are happy to inform you that your Recruiter Profile has been Verified.
+ <br>Your Job Posting is LIVE &amp; accepting Applications on Hirect.&nbsp;
+ <br>
+ <br>For a seamless hiring experience, you can review candidates, bookmark them and chat with them directly on Hirect.
+ <br>
+ <br>For support, connect with&nbsp;our&nbsp;
+ <a data-saferedirecturl="https://www.google.com/url?q=https://wa.me/918446164920&amp;source=gmail&amp;ust=1652349481175000&amp;usg=AOvVaw0qcwaPhd9ZKeoVgcbnCZkn" data-cke-saved-href="https://api.whatsapp.com/send/?phone=918793804808&amp;text=&amp;app_absent=0&amp;utm_medium=Whatsapp" href="https://api.whatsapp.com/send/?phone=918793804808&amp;text=&amp;app_absent=0&amp;utm_medium=Whatsapp" rel="noopener noreferrer" target="_blank">WhatsApp Chat Support Team
+ </a>&nbsp;or email us at support@hirect.in
+ </span>
+ </span>
+ <br>
+ <br>
+ <br>
+ <span style="font-family:Arial,Helvetica,sans-serif;">
+ <span style="font-size:14px;">Thank you for registering with Hirect!
+ <br>Sincerely,
+ <br>
+ <strong>Hirect
+ </strong>
+ </span>
+ </span>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div> 
+ </td> 
+ </tr> 
+ <tr class="srt-block"> 
+ <td valign="top" class=""> 
+ <div aria-describedby="cke_10841" aria-label="Rich Text Editor, editor25" aria-multiline="true" class="ckedit cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" contenteditable="true" role="textbox" spellcheck="true" style="position: relative;" tabindex="0">
+ <table border="0" class="block-table cke_show_border" height="" style="border-spacing: 0px; border-collapse: collapse; width: 604.75px; background-color: rgb(255, 255, 255); border-style: dotted; border-color: rgb(211, 211, 211); border-width: 0px;" width="604.75">
+ <tbody>
+ <tr>
+ <td class="block-cell" style="padding: 0px;">
+ <table border="0" cellpadding="0" cellspacing=" 0" style="border-spacing: 0;border-collapse: collapse;" width="100%" class=" cke_show_border">
+ <tbody>
+ <tr height="" style="width:100%;" width="100%">
+ <td class="block-content">
+ <div>
+ <a data-cke-saved-href="https://bit.ly/3idvP66" href="https://bit.ly/3idvP66">
+ <span tabindex="-1" contenteditable="false" data-cke-widget-wrapper="1" data-cke-filter="off" class="cke_widget_wrapper cke_widget_inline cke_widget_image cke_image_nocaption" data-cke-display-name="image" data-cke-widget-id="0" role="region" aria-label=" image widget">
+ <img alt="" data-cke-saved-src="https://hirect-in.od2.vtiger.com/test/upload/images/logo_26_vtiger-01-03.png" src="https://hirect-in.od2.vtiger.com/test/upload/images/logo_26_vtiger-01-03.png" style="width: 100%;" data-cke-widget-upcasted="1" data-cke-widget-keep-attr="0" data-widget="image" class="cke_widget_element" width="100%" data-cke-widget-data="{%22hasCaption%22%3Afalse%2C%22src%22%3A%22https%3A%2F%2Fhirect-in.od2.vtiger.com%2Ftest%2Fupload%2Fimages%2Flogo_26_vtiger-01-03.png%22%2C%22alt%22%3A%22%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22%22%2C%22lock%22%3Atrue%2C%22align%22%3A%22none%22%2C%22classes%22%3Anull}">
+ <span class="cke_reset cke_widget_drag_handler_container" style="background:rgba(220,220,220,0.5);background-image:url(https://hirect-in.od2.vtiger.com/_resources9.22.6.1_/layouts/v9/assets/include/library/ckeditor/ckeditor4-full/plugins/widget/images/handle.png);display:none;">
+ <img class="cke_reset cke_widget_drag_handler" data-cke-widget-drag-handler="1" src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true">
+ </span>
+ <span class="cke_image_resizer" title="Click and drag to resize">
+ </span>
+ </span> 
+ </a>
+ </div>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div> 
+ </td> 
+ </tr> 
+ <tr class="srt-block"> 
+ <td valign="top" class=""> 
+ <div aria-describedby="cke_10903" aria-label="Rich Text Editor, editor26" aria-multiline="true" class="ckedit cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" contenteditable="true" role="textbox" spellcheck="true" style="position: relative;" tabindex="0">
+ <table border="0" class="block-table cke_show_border" height="" style="border-spacing: 0px; border-collapse: collapse; width: 604.75px; background-color: transparent; border-style: dotted; border-color: rgb(211, 211, 211);" width="604.75">
+ <tbody>
+ <tr>
+ <td class="block-cell" style="padding: 0px;">
+ <br>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div> 
+ </td> 
+ </tr>
+ <tr class="srt-block"> 
+ <td style="vertical-align: top;" class=""> 
+ <div class="ckedit cke_editable cke_editable_inline cke_contents_ltr cke_show_borders" contenteditable="true" tabindex="0" spellcheck="true" role="textbox" aria-multiline="true" aria-label="Rich Text Editor, editor27" aria-describedby="cke_10965" style="position: relative;">
+ <table class="block-table cke_show_border" style="width: 604.75px; border-spacing: 0px; border-collapse: collapse; background-color: transparent; border-style: dotted; border-color: rgb(211, 211, 211); border-width: 0px;" width="604.75" height="">
+ <tbody>
+ <tr>
+ <td class="block-cell" style="width: 100%; vertical-align: middle; padding: 0px;" width="100%" height="">
+ <table style="width: 100%;border-spacing: 0;border-collapse: collapse;" class=" cke_show_border" width="100%" height="">
+ <tbody>
+ <tr>
+ <td class="block-content" style="color: #B8B8B8;text-align: center;font-size: 12px;padding: 9px 18px;vertical-align: top;">
+ <br>You are receiving this email because you signed up on our application
+ <br>If you want to unsubscribe, 
+ <a data-cke-saved-href="http://unsubscribe/" href="http://unsubscribe/">click here
+ </a>.
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div> 
+ </td> 
+ </tr> 
+ </tbody> 
+ </table> 
+ </center>
+ </body>
+</html>

@@ -1,0 +1,21 @@
+/* .slds-modal__content {
+    overflow: visible;
+    overflow-y: visible;
+} */
+
+/* .slds-modal__container{ 
+    height : auto; width: 80%; max-width: 70vh; 
+  }  */
+  
+  .slds-modal__footer{ 
+    display: inline !important; 
+  }
+
+
+.slds-modal__container{
+    max-width: 50% !important;
+    width: 50% !important; 
+}
+.slds-modal__content{
+    overflow: initial;
+}

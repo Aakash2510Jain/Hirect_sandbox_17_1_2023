@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>App_India_Registration_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>App India Registration Group</shortDescription>
+        <value>App India Registration / Webapp</value>
+    </labels>
+    <labels>
+        <fullName>BatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BatchSize</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>Document_Task_Default_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Document Task Default ID</shortDescription>
+        <value>0050w000003ygbUAAQ</value>
+    </labels>
+    <labels>
+        <fullName>LeadStage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadStage</shortDescription>
+        <value>FollowUp</value>
+    </labels>
+    <labels>
+        <fullName>LeadSubStage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadSubStage</shortDescription>
+        <value>OIP</value>
+    </labels>
+    <labels>
+        <fullName>Lead_List_View_Name_To_redirect</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead List View Name To redirect</shortDescription>
+        <value>Recently viewed</value>
+    </labels>
+    <labels>
+        <fullName>OpsTaskCreationStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OpsTaskCreationStatus</shortDescription>
+        <value>Uploaded documents</value>
+    </labels>
+    <labels>
+        <fullName>RegistrationProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RegistrationProgress</shortDescription>
+        <value>Posted Job</value>
+    </labels>
+    <labels>
+        <fullName>Revenue_Team</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Revenue Team</shortDescription>
+        <value>Operations Team</value>
+    </labels>
+    <labels>
+        <fullName>Site_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Site URL</shortDescription>
+        <value>https://partial-razorpaywebhookapi.cs75.force.com/apex/TaxInvoice?id=</value>
+    </labels>
+    <labels>
+        <fullName>Task_List_view_Name_to_Redirect</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Task List view Name to Redirect</shortDescription>
+        <value>Todays Tasks</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,10 @@
+Hi {!Account.Name},<br/><br/>
+
+Your Subscription has been activated and Payment {!Opportunity.Amount} has been received, you can start posting Jobs.<br/><br/>
+
+Hire Instantly for Your Startup.<br/>
+<img src="https://hirect4--partial--c.visualforce.com/resource/1652518777000/Logo"/>
+
+<br/><br/>
+ Best Wishes<br/>
+ {!User.Name}

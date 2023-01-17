@@ -1,0 +1,46 @@
+<aura:component implements="lightning:availableForFlowScreens" 
+                access="global" controller="ProcessLeadRecords">
+
+    <!--style to incraee width-->
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 80rem !important;
+        width:80% !important;
+        }
+    </aura:html>
+
+    <aura:attribute name="ListofLeads" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.onPageReferenceChange}" />
+    <!-- aura:handler name="change" value="{!v.pageReference}" action="{!c.onPageReferenceChange}" / -->
+    <!-- aura:attribute name="isModalOpen" type="boolean" default="false" / -->
+    <aura:attribute name="AssignGroupList" type="List" />
+    <aura:attribute name="SelectedAssignGroup" type="String" /> 
+    <aura:attribute name="AllLeadListview" type="Object" />
+    
+    <aura:attribute name="onclick" type="Aura.Action" description="Transfer lead to Round Robin"/>
+
+
+    
+    <!--Modal/Popup Box Body Starts here-->
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
+        <lightning:card title="Lead List">
+            <!-- aura:iteration items="{!v.ListofLeads}" var="item">
+                <p class="slds-p-horizontal_small"> Lead Id {!item} </p>
+            </aura:iteration -->
+
+            <lightning:select name="Assignment Groups" label="" required = "true" value="{!v.SelectedAssignGroup}">
+                <option value="">choose one...</option>
+                <aura:iteration items="{!v.AssignGroupList}" var="item">
+                    <option text="{!item.value}" value="{!item.key}" />
+                </aura:iteration>
+            </lightning:select>
+        </lightning:card>
+    </div>
+                <!--Modal/Popup Box Footer Starts here-->
+    <footer class="slds-modal__footer">
+        <lightning:button variant="neutral" label="Cancel" title="Cancel" onclick="{! c.closeModel }" />
+        <lightning:button variant="brand" label="OK" title="OK" onclick="{!c.submitDetails}" />
+    </footer>
+	
+</aura:component>

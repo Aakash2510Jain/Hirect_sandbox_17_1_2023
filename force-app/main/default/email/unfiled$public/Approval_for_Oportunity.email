@@ -1,0 +1,8 @@
+*** NEW OPPORTUNITY ASSIGNMENT FOR APPROVAL*** <br/><br/>
+
+The following opportunity has been assigned to you. <br/><br/>
+
+Account :  {!Opportunity.Account}<br/>
+Amount : {!Opportunity.Amount}   <br/><br/>
+
+Click on the link to access the record directly:<a href="https://hirect4--partial.lightning.force.com/lightning/r/Opportunity/"+{!Opportunity.Id}+"/view">Access Record</a>

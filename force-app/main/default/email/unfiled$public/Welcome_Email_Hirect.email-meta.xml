@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Welcome Email Hirect</name>
+    <style>none</style>
+    <subject>Welcome To  Hirect..!</subject>
+    <textOnly>Dear {!Lead.FirstName} {!Lead.LastName},
+
+Welcome to Hirect! We are glad to have you in the Hirect Ecosystem, your one-stop solution to hire the best talent from a pool of over 3M+ registered and verified candidates.
+
+Your profile on Hirect has been created successfully. You can keep an eye out here for our new offerings. We will keep you updated. Hirect looks forward to helping you.
+
+Best Wishes
+Team Hirect.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

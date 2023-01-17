@@ -1,0 +1,5 @@
+<design:component label="TransferLeadToRoundRobin">
+    
+    <design:attribute name="SelectedAssignGroup" label="SelectedAssignGroup" />  
+	
+</design:component>

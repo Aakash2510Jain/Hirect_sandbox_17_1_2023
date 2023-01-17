@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>If discount is greater than 10%</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Approval for Oportunity</name>
+    <style>none</style>
+    <subject>Opportunity for Approval</subject>
+    <textOnly>*** NEW OPPORTUNITY ASSIGNMENT FOR APPROVAL***  The following opportunity has been assigned to you.  Account :  {!Opportunity.Account} Amount : {!Opportunity.Amount}  Click on the link to access the record directly:Access Record</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
